@@ -1,0 +1,16 @@
+eljaiek:
+  security:
+    recipes:
+      jwt:
+        secret-key: S3cr3ct
+        expires-in: 5
+
+---
+spring:
+  profiles: custom-path
+eljaiek:
+  security:
+    recipes:
+      jwt:
+        login-path: /auth
+---
