@@ -19,6 +19,7 @@
         <module>spring-security-recipes-jwt</module>
         <module>spring-security-recipes-parent</module>
         <module>spring-security-recipes-basic</module>
+        <module>spring-security-recipes-starter</module>
     </modules>
 
     <dependencies>
