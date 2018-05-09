@@ -5,7 +5,9 @@ while requiring developer minimal additional effort.
 
 ## Recipes
 
-- Basic Authentication with CSRF protection
+- Integration with [zalando/problem-spring-web](https://github.com/zalando/problem-spring-web) 
+
+- Basic Authentication with CSRF protection for Angular
 
 - JWT Authentication
 
@@ -23,11 +25,9 @@ while requiring developer minimal additional effort.
 
 ## TODOs
 
-- Implement Cors Recipe
-
-- Implement Spring Boot Starter
-
 - Finish README
+
+- Implement Cors Recipe
 
 - Implement Shared Sessions Recipe
 
