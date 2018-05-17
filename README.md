@@ -7,6 +7,8 @@ while requiring developer minimal additional effort.
 
 - Integration with [zalando/problem-spring-web](https://github.com/zalando/problem-spring-web) 
 
+- Cors Filter based on [JHipster](https://www.jhipster.tech/) Spring Security setup
+
 - Basic Authentication with CSRF protection for Angular
 
 - JWT Authentication
@@ -26,8 +28,6 @@ while requiring developer minimal additional effort.
 ## TODOs
 
 - Finish README
-
-- Implement Cors Recipe
 
 - Implement Shared Sessions Recipe
 

@@ -20,6 +20,7 @@
         <module>spring-security-recipes-parent</module>
         <module>spring-security-recipes-basic</module>
         <module>spring-security-recipes-starter</module>
+        <module>spring-security-recipes-cors</module>
     </modules>
 
     <dependencies>

@@ -1,0 +1,9 @@
+---
+spring:
+  profiles: cors-disabled
+eljaiek:
+  security:
+    recipes:
+      cors:
+        enabled: false
+---
