@@ -36,6 +36,7 @@ public final class CorsSecurityProperties {
         config.setAllowedMethods(allowedMethods);
         config.setAllowedHeaders(allowedHeaders);
         config.setExposedHeaders(exposedHeaders);
+        config.setAllowCredentials(allowCredentials);
         config.setMaxAge(maxAge);
         return config;
     }
