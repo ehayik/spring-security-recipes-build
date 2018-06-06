@@ -5,6 +5,7 @@ import org.github.eljaiek.security.core.SecurityRecipeUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.web.authentication.WebAuthenticationDetails;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Collections;
@@ -27,11 +28,14 @@ public class AuthenticationMapperAdapter implements AuthenticationMapper {
         val credentials = header.replace(BASIC_PREFIX, "");
         val arr = decode(credentials).split(claimSeparator);
         assertCredentials(arr);
-        return new UsernamePasswordAuthenticationToken(
+        val auth = new UsernamePasswordAuthenticationToken(
                 arr[USER_INDEX],
                 arr[PASSWORD_INDEX],
                 Collections.emptyList()
         );
+
+        auth.setDetails(new WebAuthenticationDetails(request));
+        return auth;
     }
 
     protected String decode(String encodedAuth) {
