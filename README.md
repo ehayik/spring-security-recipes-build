@@ -1,7 +1,6 @@
 # Spring Boot Security Recipes
 
-Set of libraries that implement known recipes for the authentication/authorization process using Spring Security in REST APIS,
-while requiring developer minimal additional effort.
+Set of libraries that implements well known Spring Security recipes while requiring developer minimal additional effort.
 
 ## Recipes
 
